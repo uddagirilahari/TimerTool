@@ -1,0 +1,21 @@
+<html>
+<head>
+    <title>Timer Tool</title>
+</head>
+<body>
+<div class = "card">
+    <h1>Timer Tool</h1>
+    <h1 [ngStyle]="{ 'color': timeDisplay <= '00:10' ? 'red' : 'black' }">{{ timeDisplay }}</h1>
+    <div>
+    <button (click)="startTimer()" [disabled]="isStartDisabled" id="start" [class.disabled]="isStartDisabled">Start</button>
+    <button (click)="resetTimer()" [disabled]="isResetDisabled" id="reset" [class.disabled]="isResetDisabled">Reset</button>
+    </div>
+    <div>
+    <button (click)="pauseTimer()" [disabled]="isPauseDisabled" id="pause" [class.disabled]="isPauseDisabled">Pause</button>
+    <button (click)="resumeTimer()" [disabled]="isResumeDisabled" id="resume" [class.disabled]="isResumeDisabled">Resume</button>
+    </div>
+  </div>
+
+</body>
+</html>
+

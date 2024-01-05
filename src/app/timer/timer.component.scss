@@ -1,0 +1,84 @@
+body, html {
+    
+    margin: 0;
+    padding: 0;
+    // background-color: #e0e0e0; /* Replace with your desired background color */
+    height: 100%;
+  }
+
+div {
+    text-align: center;
+    margin-top: 10px;
+    
+  }
+  
+  .card {
+    padding: 5px;
+    width: 30%;
+    // height: 50%;
+    margin-top: 4.5cm;
+     margin-left: 12cm;
+    background-color:burlywood;
+    border-radius: 15px;
+    border: 1px solid;
+    box-shadow: 0 4px 8px 0 black;
+    transition: 0.3s;
+    text-align: center;
+  }
+  #start {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgreen
+  }
+  #start:hover{
+    cursor: pointer;
+    background-color: green;
+    color: white;
+  }
+
+  #reset{
+    margin: 5px;
+    padding: 10px;
+    background-color: lightblue;
+  }
+
+  #reset:hover{
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+  }
+
+  #pause {
+    margin: 5px;
+    padding: 10px;
+    background-color: lightgray;
+  }
+
+  #pause:hover{
+    cursor: pointer;
+    background-color: darkgrey;
+    // color: white;
+  }
+
+  #resume{
+    margin: 5px;
+    padding: 10px;
+    background-color: orange
+  }
+
+  #resume:hover{
+    cursor: pointer;
+    background-color: darkorange;
+    color: white;
+  }
+
+  button{
+    border-radius: 10px;
+  }
+
+  button.disabled {
+    pointer-events: none;
+    cursor:not-allowed;
+    background-color: #ccc;
+    
+  }
